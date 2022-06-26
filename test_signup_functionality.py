@@ -8,27 +8,25 @@ passwords = {'Password123','1assword','3f20','@#!!dwqod','p123321',')@!SSword','
 emails = {'email@dom.com', '1ema!l@d0m.com', 'emaildom.com', 'email', ' '}
 pNumbers = {'123‑456‑7890','000-000-0000','111-111-1111','ABC-DEF-AAAA','#########',' '}
 
-@pytest.mark.slow
 def test_testsignup(driver):
-    time.sleep(3)
+    # time.sleep(3)
     element = driver.find_element(By.CSS_SELECTOR,".v-p-right-xxs:nth-child(2)")
-    time.sleep(1)
+    # time.sleep(1)
     actions = ActionChains(driver)
     time.sleep(1)
     actions.move_to_element(element).perform()
     time.sleep(1)
+    # driver.find_element(By.XPATH,'//*[@id="shop-account-menu-064dc78b-67e6-4ead-8ef2-32adac713deb"]')
     driver.find_element(By.CSS_SELECTOR,".v-p-right-xxs:nth-child(2)").click()
     time.sleep(1)
     element = driver.find_element(By.CSS_SELECTOR,"body")
     time.sleep(1)
     actions = ActionChains(driver)
     actions.move_to_element(element).perform()
-    driver.implicitly_wait(10)
-    driver.find_element(By.LINK_TEXT,"Create Account").click()
     time.sleep(1)
     driver.find_element(By.CSS_SELECTOR,".c-button-secondary").click()
     time.sleep(10)
-    driver.find_element(By.ID,"firstName").click()
+    driver.find_element(By.ID,"#firstName").click()
     time.sleep(3)
     driver.find_element(By.ID,"firstName").send_keys("Khaled")
     driver.find_element(By.ID,"lastName").send_keys("Blbesie")
