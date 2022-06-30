@@ -1,0 +1,12 @@
+.idea/
+jenkins.war
+venv
+chromedriver
+conftest.py
+config
+drivers
+.pytest_cache
+geckodriver
+geckodriver.log
+selenium-server-4.2.2.jar
+main.py
