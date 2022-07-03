@@ -86,8 +86,6 @@ def test_testpricereflectingafteraddproducttocart(driver):
     price = 500
     driver.find_element(By.CSS_SELECTOR, "#cartModal > div > div > div.modal-body > p:nth-child(2) > a > u").click()
     driver.implicitly_wait(10)
-
     totalAmount = driver.find_element(By.XPATH, '//*[@id="product-1"]/td[5]/p').text
-
 
     assert float(totalAmount[4:]) == price
