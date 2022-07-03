@@ -3,6 +3,7 @@ import pytest
 import time
 from selenium.webdriver.common.by import By
 
+'''
 @pytest.mark.slow
 def test_testfailedsignupwithincorrectvaluesinfields(driver):
     driver.get("https://automationexercise.com/")
@@ -63,3 +64,4 @@ def test_testfailedsignupwithinvalidemail(driver):
         assert "رجاءً املأ هذا الحقل." == alert
     else:
         raise "Browser Not Supported!"
+'''
