@@ -11,7 +11,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import random
 import string
-
+'''
 def test_testsignup(driver):
     driver.get("https://automationexercise.com/")
 
@@ -63,6 +63,7 @@ def test_testsignup(driver):
     driver.find_element(By.CSS_SELECTOR, ".btn:nth-child(22)").click()
     htmlElement = driver.find_element(By.CSS_SELECTOR,"#form > div > div > div > h2")
     assert htmlElement.text == "ACCOUNT CREATED!"
+'''
 
 def test_testsignin(driver):
     driver.get("https://automationexercise.com/")

@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-  
+'''
 def test_testsearchingaproduct(driver):
     driver.get("https://automationexercise.com/")
     driver.find_element(By.LINK_TEXT, " Products").click()
@@ -20,3 +20,4 @@ def test_testsearchingaproduct(driver):
     elementFound = driver.find_element(By.CSS_SELECTOR, "body > section:nth-child(3) > div > div > div.col-sm-9.padding-right > div > div.col-sm-4 > div > div.single-products > div.productinfo.text-center > p")
 
     assert elementFound.text == "GRAPHIC DESIGN MEN T SHIRT - BLUE"
+'''

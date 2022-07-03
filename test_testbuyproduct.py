@@ -3,7 +3,7 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
-
+'''
 def test_testaddproducttocart(driver):
       driver.get("https://automationexercise.com/")
       driver.find_element(By.LINK_TEXT, "Signup / Login").click()
@@ -90,3 +90,5 @@ def test_testpricereflectingafteraddproducttocart(driver):
 
 
     assert float(totalAmount[4:]) == price
+
+'''

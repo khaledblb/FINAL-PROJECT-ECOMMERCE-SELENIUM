@@ -17,7 +17,7 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 
 import pytest
-
+'''
 @pytest.fixture()
 def driver():
     firefox_driver_binary = "./geckodriver"
@@ -64,3 +64,4 @@ def driver():
 
     yield driver
     driver.close()
+'''
