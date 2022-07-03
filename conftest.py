@@ -39,7 +39,7 @@ def driver():
         }
         firefox_options.add_argument("--headless")
         firefox_options.add_argument("--disable-gpu")
-        driver = webdriver.Remote("http://localhost:4444" ,desired_capabilities=dc)
+        driver = webdriver.Remote("http://localhost:4444" ,desired_capabilities=dc,options=firefox_options)
 
     elif browser_name == "safari":
         safari_options.add_argument("--headless")
