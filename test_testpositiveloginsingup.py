@@ -63,7 +63,6 @@ def test_testsignup(driver):
     htmlElement = driver.find_element(By.CSS_SELECTOR,"#form > div > div > div > h2")
     assert htmlElement.text == "ACCOUNT CREATED!"
 
-
 '''
 def test_testsignin(driver):
     driver.get("https://automationexercise.com/")
