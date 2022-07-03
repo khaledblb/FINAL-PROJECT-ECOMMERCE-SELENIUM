@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="26.439" timestamp="2022-07-03T21:34:40.777540" hostname="Khaleds-MacBook-Pro.local"><testcase classname="test_testpositiveloginsingup" name="test_testsignin" time="26.401" /></testsuite></testsuites>

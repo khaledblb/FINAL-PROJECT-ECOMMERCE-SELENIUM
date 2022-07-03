@@ -17,7 +17,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 
-
 @pytest.fixture()
 def driver():
     firefox_driver_binary = "./geckodriver"
@@ -25,7 +24,7 @@ def driver():
     safari_options = SafariOptions()
     firefox_options = FireFoxOptions()
     chrome_options = ChromeOptions()
-    browser_name = "firefox"
+    browser_name = "chrome"
 
     # if isinstance(browserName,list):
     #     for browser_name in browserName:
@@ -37,9 +36,10 @@ def driver():
             #"browserVersion": "101.0.1(x64)",
             "platformName": "MAC"
         }
-        firefox_options.add_argument("--headless")
-        firefox_options.add_argument("--disable-gpu")
-        driver = webdriver.Remote("http://localhost:4444" ,desired_capabilities=dc,options=firefox_options)
+        # firefox_options.add_argument("--headless")
+        # firefox_options.add_argument("--disable-gpu")
+        # driver = webdriver.Remote("http://localhost:4444" ,desired_capabilities=dc,options=firefox_options)
+        driver = webdriver.Remote("http://localhost:4444" ,desired_capabilities=dc)
 
     elif browser_name == "safari":
         safari_options.add_argument("--headless")
@@ -54,9 +54,10 @@ def driver():
             "browserName": "chrome",
             "platformName": "MAC"
         }
-        chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--disable-gpu")
-        driver = webdriver.Remote("http://192.168.1.189:4444", desired_capabilities=dc,options=chrome_options)
+        # chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--disable-gpu")
+        # driver = webdriver.Remote("http://192.168.1.189:4444", desired_capabilities=dc,options=chrome_options)
+        driver = webdriver.Remote("http://localhost:4444", desired_capabilities=dc)
 
     elif browser_name == "firefox-mobile":
         firefox_options = FireFoxOptions()
