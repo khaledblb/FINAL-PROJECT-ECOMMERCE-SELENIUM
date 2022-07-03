@@ -3,6 +3,7 @@ import pytest
 import time
 from selenium.webdriver.common.by import By
 
+@pytest.mark.slow
 def test_testfailedsignupwithincorrectvaluesinfields(driver):
     driver.get("https://automationexercise.com/")
     driver.find_element(By.LINK_TEXT, "Signup / Login").click()

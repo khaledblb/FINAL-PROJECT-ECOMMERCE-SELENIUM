@@ -512,3 +512,57 @@ JavaScript warning: https://automationexercise.com/static/js/jquery.js, line 2: 
 
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
+1656721648462	geckodriver	INFO	Listening on 127.0.0.1:53251
+1656721648470	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=375" "--height=812" "--remote-debugging-port" "53252" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/k8/f820mjw55lbb4sr5rzn25zr00000gn/T/rust_mozprofileMzoUKL"
+2022-07-02 03:27:28.926 plugin-container[8993:379136] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-02 03:27:28.926 plugin-container[8993:379136] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656721648926	Marionette	INFO	Marionette enabled
+2022-07-02 03:27:28.955 plugin-container[8993:379136] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-02 03:27:28.955 plugin-container[8993:379136] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-02 03:27:28.956 plugin-container[8993:379145] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-02 03:27:28.956 plugin-container[8993:379145] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:53252
+2022-07-02 03:27:29.698 firefox-bin[8992:379058] Warning: Expected min height of view: (<NSButton: 0x133e3fc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:27:29.698 firefox-bin[8992:379058] Warning: Expected min height of view: (<NSButton: 0x13402c800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:27:29.698 firefox-bin[8992:379058] Warning: Expected min height of view: (<NSButton: 0x134030c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:27:29.699 firefox-bin[8992:379058] Warning: Expected min height of view: (<NSButton: 0x13402ac00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:27:29.699 firefox-bin[8992:379058] Warning: Expected min height of view: (<NSButton: 0x13402d800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:27:29.700 firefox-bin[8992:379058] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x13402c400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:27:29.700 firefox-bin[8992:379058] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x133e39c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/k8/f820mjw55lbb4sr5rzn25zr00000gn/T/rust_mozprofileMzoUKL/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656721650607	Marionette	INFO	Listening on port 53402
+DevTools listening on ws://localhost:53252/devtools/browser/cef12b1e-6f71-4b76-bc1a-0bb68514866f
+Read port: 53402
+1656721650640	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656721651655	Marionette	INFO	Stopped listening on port 53402
+JavaScript error: resource://gre/modules/TerminatorTelemetry.jsm, line 71: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656722295074	geckodriver	INFO	Listening on 127.0.0.1:61315
+1656722295589	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=375" "--height=812" "--remote-debugging-port" "61316" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/k8/f820mjw55lbb4sr5rzn25zr00000gn/T/rust_mozprofilerOYVzm"
+2022-07-02 03:38:16.200 plugin-container[9245:386805] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-02 03:38:16.200 plugin-container[9245:386805] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656722296212	Marionette	INFO	Marionette enabled
+2022-07-02 03:38:16.238 plugin-container[9245:386805] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-02 03:38:16.238 plugin-container[9245:386805] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-02 03:38:16.239 plugin-container[9245:386812] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-02 03:38:16.239 plugin-container[9245:386812] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:61316
+2022-07-02 03:38:17.128 firefox-bin[9244:386733] Warning: Expected min height of view: (<NSButton: 0x135b05c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:38:17.128 firefox-bin[9244:386733] Warning: Expected min height of view: (<NSButton: 0x135d2cc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:38:17.129 firefox-bin[9244:386733] Warning: Expected min height of view: (<NSButton: 0x135d33400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:38:17.129 firefox-bin[9244:386733] Warning: Expected min height of view: (<NSButton: 0x135d33800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:38:17.130 firefox-bin[9244:386733] Warning: Expected min height of view: (<NSButton: 0x135d2e000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:38:17.130 firefox-bin[9244:386733] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x135d30400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-07-02 03:38:17.130 firefox-bin[9244:386733] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11bb7a800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/k8/f820mjw55lbb4sr5rzn25zr00000gn/T/rust_mozprofilerOYVzm/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656722298032	Marionette	INFO	Listening on port 61515
+DevTools listening on ws://localhost:61316/devtools/browser/b972eace-96d9-48bb-9ad0-16f7e3b376c1
+Read port: 61515
+1656722298069	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656722298625	Marionette	INFO	Stopped listening on port 61515
