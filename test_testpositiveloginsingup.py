@@ -59,10 +59,10 @@ def test_testsignup(driver):
     driver.find_element(By.ID, "mobile_number").send_keys("+972544249695")
     driver.find_element(By.ID, "company").click()
     driver.implicitly_wait(10)
-
     driver.find_element(By.CSS_SELECTOR, ".btn:nth-child(22)").click()
     htmlElement = driver.find_element(By.CSS_SELECTOR,"#form > div > div > div > h2")
     assert htmlElement.text == "ACCOUNT CREATED!"
+
 
 '''
 def test_testsignin(driver):
