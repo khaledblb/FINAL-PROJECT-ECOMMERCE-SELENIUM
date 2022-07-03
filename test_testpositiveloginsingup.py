@@ -14,17 +14,12 @@ import string
 
 def test_testsignup(driver):
     driver.get("https://automationexercise.com/")
-
     driver.find_element(By.LINK_TEXT, "Signup / Login").click()
-
     driver.find_element(By.NAME, "name").click()
     driver.find_element(By.NAME, "name").send_keys("Khaled blb")
     driver.implicitly_wait(5)
-
     driver.find_element(By.CSS_SELECTOR, ".signup-form input:nth-child(3)").send_keys(random_char(7)+"@gmaill.com")
-
     driver.implicitly_wait(5)
-
     driver.find_element(By.CSS_SELECTOR, ".signup-form input:nth-child(3)").send_keys(Keys.ENTER)
     driver.implicitly_wait(20)
     driver.find_element(By.ID, "id_gender1").click()
@@ -38,7 +33,6 @@ def test_testsignup(driver):
     dropdown.find_element(By.XPATH, "//option[. = 'April']").click()
     driver.find_element(By.CSS_SELECTOR, ".form-group:nth-child(6)").click()
     driver.implicitly_wait(5)
-
     driver.find_element(By.ID, "years").click()
     dropdown = driver.find_element(By.ID, "years")
     dropdown.find_element(By.XPATH, "//option[. = '2013']").click()
