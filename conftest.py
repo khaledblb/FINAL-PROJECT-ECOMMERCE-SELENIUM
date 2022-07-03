@@ -12,7 +12,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 import pytest
-
 import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
@@ -68,7 +67,6 @@ def driver():
                                                                      "Gecko) CriOS/101.0.4951.44 Mobile/15E148 Safari/604.1")
         # firefox_options.set_preference("general.useragent.override", "Nexus 7")
         driver = webdriver.Firefox(service=ser_firefox, options=firefox_options)
-
     yield driver
     driver.close()
 

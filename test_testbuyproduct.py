@@ -88,4 +88,5 @@ def test_testpricereflectingafteraddproducttocart(driver):
     driver.implicitly_wait(10)
     totalAmount = driver.find_element(By.XPATH, '//*[@id="product-1"]/td[5]/p').text
 
+
     assert float(totalAmount[4:]) == price
