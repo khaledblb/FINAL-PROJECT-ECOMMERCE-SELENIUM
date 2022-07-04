@@ -49,7 +49,6 @@ def driver():
         # driver = webdriver.Remote("http://192.168.1.189:4444", desired_capabilities=dc,options=chrome_options)
         driver = webdriver.Remote("http://192.168.1.189:4444",desired_capabilities=dc)
 
-
     elif browser_name == "firefox-mobile":
         firefox_options = FireFoxOptions()
         firefox_options.add_argument("--width=375")
