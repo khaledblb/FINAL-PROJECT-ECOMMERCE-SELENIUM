@@ -6,7 +6,6 @@ from selenium.webdriver.firefox.options import Options as FireFoxOptions
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 import pytest
 from selenium import webdriver
-
 @pytest.fixture()
 def driver():
     firefox_driver_binary = "./geckodriver"
