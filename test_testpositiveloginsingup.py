@@ -58,17 +58,17 @@ def test_testsignup(driver):
     assert htmlElement.text == "ACCOUNT CREATED!"
 '''
 
-def test_testsignin(driver):
-    driver.get("https://automationexercise.com/")
-    driver.find_element(By.LINK_TEXT, "Signup / Login").click()
-    driver.find_element(By.NAME, "email").click()
-    driver.find_element(By.NAME, "email").send_keys("khaledblb@gmaill.com")
-    driver.find_element(By.NAME, "password").send_keys("khaledd1")
-    driver.find_element(By.NAME, "password").send_keys(Keys.ENTER)
-    # driver.find_element(By.LINK_TEXT, "Logout").click()
-    driver.implicitly_wait(5)
-    htmlElement = driver.find_element(By.CSS_SELECTOR, "#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(10) > a")
-    assert htmlElement.text.find("logged in") == -1
-
-def random_char(y) :
-    return ''.join(random.choice(string.ascii_letters) for x in range(y))
+# def test_testsignin(driver):
+#     driver.get("https://automationexercise.com/")
+#     driver.find_element(By.LINK_TEXT, "Signup / Login").click()
+#     driver.find_element(By.NAME, "email").click()
+#     driver.find_element(By.NAME, "email").send_keys("khaledblb@gmaill.com")
+#     driver.find_element(By.NAME, "password").send_keys("khaledd1")
+#     driver.find_element(By.NAME, "password").send_keys(Keys.ENTER)
+#     # driver.find_element(By.LINK_TEXT, "Logout").click()
+#     driver.implicitly_wait(5)
+#     htmlElement = driver.find_element(By.CSS_SELECTOR, "#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(10) > a")
+#     assert htmlElement.text.find("logged in") == -1
+#
+# def random_char(y) :
+#     return ''.join(random.choice(string.ascii_letters) for x in range(y))
