@@ -7,7 +7,8 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 import pytest
 from selenium import webdriver
 @pytest.fixture()
-def driver():
+@pytest.mark.parametrize("headless")
+def driver(headless):
     firefox_driver_binary = "./geckodriver"
     chrome_driver_binary = "./chromedriver"
     ser_firefox = FirefoxService(firefox_driver_binary)
@@ -44,10 +45,13 @@ def driver():
             "browserName": "chrome",
             "platformName": "MAC"
         }
-        # chrome_options.add_argument("--headless")
-        # chrome_options.add_argument("--disable-gpu")
-        # driver = webdriver.Remote("http://192.168.1.189:4444", desired_capabilities=dc,options=chrome_options)
-        driver = webdriver.Remote("http://192.168.1.189:4444",desired_capabilities=dc)
+        if headless == True:
+            print("hi")
+            chrome_options.add_argument("--headless")
+            chrome_options.add_argument("--disable-gpu")
+        else:
+            # driver = webdriver.Remote("http://192.168.1.189:4444", desired_capabilities=dc,options=chrome_options)
+            driver = webdriver.Remote("http://192.168.1.189:4444",desired_capabilities=dc,options=chrome_options)
 
     elif browser_name == "firefox-mobile":
         firefox_options = FireFoxOptions()
@@ -67,3 +71,15 @@ def test_title(driver) :
     driver.save_screenshot("testgooletitle.png")
 
     assert title == "Google"
+
+
+def pytest_addoption(parser):
+    parser.addoption("--headless", action="store", default="default name")
+
+
+def pytest_generate_tests(metafunc):
+    # This is called for every test. Only get/set command line arguments
+    # if the argument is specified in the list of test "fixturenames".
+    option_value = metafunc.config.option.headless
+    if 'headless' in metafunc.fixturenames and option_value is not None:
+        metafunc.parametrize("headless", [option_value])
