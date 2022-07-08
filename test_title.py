@@ -15,5 +15,4 @@ def test_title(driver):
     driver.get("https://www.google.com/")
     title = driver.title
     driver.save_screenshot("testgooletitle.png")
-
     assert title == "Google"

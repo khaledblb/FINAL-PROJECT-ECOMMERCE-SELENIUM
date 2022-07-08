@@ -15,7 +15,7 @@ def driver(headless):
 
     firefox_options = FireFoxOptions()
     chrome_options = ChromeOptions()
-    browser_name = "chrome"
+    browser_name = "firefox"
 
     # if isinstance(browserName,list):
     #     for browser_name in browserName:

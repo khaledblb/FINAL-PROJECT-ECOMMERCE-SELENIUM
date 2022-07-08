@@ -1,7 +1,7 @@
 .idea/
 jenkins.war
 venv
-chromedriver
+../TESTING_DOCKER_JENKINS/chromedriver
 conftest.py
 config
 drivers
